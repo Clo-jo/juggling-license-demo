@@ -11,3 +11,15 @@ const router = govukPrototypeKit.requests.setupRouter()
 router.post('/new/email-address', (req,res) => {
     res.redirect ('/new/code')
 })
+
+router.post('/new/code', (req,res) => {
+    res.redirect ('/new/name')
+})
+
+router.post('/new/name', (req,res) => {
+    res.redirect ('/new/country')
+})
+
+router.post('/new/country', (req,res) => {
+    res.redirect ('/new/juggling-balls')
+})
